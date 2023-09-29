@@ -96,7 +96,10 @@ $(document).ready(function(){
 
         switch(texto){
             case "6/4": titulo = "06 de Abril de 2023"; mensagem = "<p>Esse foi o dia que nos conhecemos! Foi o dia que aquele match no tinder mudou tudo o que eu acreditava saber sobre o amor, o verdadeiro significado de amor é você.</p>";break;
-            case "19/6": titulo = "4 de Novembro de 2023"; mensagem = "<section class='text-center'><p class='letra-vermelha'><strong>Este momento está sendo escrito agora...</strong></p></section>";break;
+            case "13/4": titulo = "13 de Abril de 2023"; mensagem = "<p>Foi nesse dia que aconteceu nosso primeiro encontro, e sério eu tava muito ansioso. Era uma ansiedade boa. Eu fiz questão de deitar na sua barriga logo que você chegou, porque eu nunca me senti estranho perto de você... Sempre foi como voltar para casa. Bebemos mojitos e tivemos aquela interação fofa e estranha no trem. Você queria ter me beijado tanto quanto eu queria ter te beijado aquele dia?</p>";break;
+            case "29/4": titulo = "29 de Abril de 2023"; mensagem = "<p>Nos beijamos pela primeira vez nesse dia. Você lembra como foi a sensação? Eu sinto a mesma sensação toda vez que te beijo, é sempre apaixonante te beijar.</p>";break;
+            case "4/6": titulo = "04 de Junho de 2023"; mensagem = "<p>Sei que você me pediu em namoro a primeira vez no dia 15/05, mas eu decidi colocar a data oficial apenas. No dia 04 você me pediu em namoro, me deu uma aliança e fizemos um piquenique lindo. Eu amei ter divido esse momento com você.</p>";break;
+            case "21/10": titulo = "21 de Outubro de 2023"; mensagem = "<section class='text-center'><p class='letra-vermelha'><strong>Este momento está sendo escrito agora...</strong></p></section>";break;
             case "final": titulo = "4 de Novembro de 2023"; mensagem = "<section class='text-center mt-5 mb-5'><p><strong>O dia em que ela me disse<br><span class='letra2 letra-vermelha'>SIM</span></strong></p></section>";break;
         }
 
