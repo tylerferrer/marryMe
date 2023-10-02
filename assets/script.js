@@ -41,22 +41,26 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, "slow");
         if(nova == 5){
             var audio1 = new Audio('assets/INBOX.mp3');
-            var audio2 = new Audio('assets/musica.mp3');
-            var audio3 = new Audio('assets/explodir.mp3');
-                audio1.volume = 0.1;
-                audio2.volume = 0.1;
-                audio3.volume = 0.1;
-                audio3.play();
-            audio3.addEventListener('ended', function() {
-                // Quando o áudio1 termina, reproduza o áudio2 automaticamente
-                audio1.play();
-            });
-            audio1.addEventListener('ended', function() {
-                // Quando o áudio1 termina, reproduza o áudio2 automaticamente
-                audio2.play();
-            });
-        }  
-        document.querySelector('#mudaTela btn-azul').addEventListener('click', reproduzirAudio);
+    var audio2 = new Audio('assets/musica.mp3');
+    var audio3 = new Audio('assets/explodir.mp3');
+    audio1.volume = 0.1;
+    audio2.volume = 0.1;
+    audio3.volume = 0.1;
+
+    // Comece com o áudio3
+    audio3.play();
+
+    audio3.addEventListener('ended', function() {
+        // Quando o áudio3 termina, reproduza o áudio1 automaticamente
+        audio1.play();
+    });
+
+    audio1.addEventListener('ended', function() {
+        // Quando o áudio1 termina, reproduza o áudio2 automaticamente
+        audio2.play();
+    });
+}
+        document.querySelector('#mudaTela btn-azul').addEventListener('click', verificaFundo);
         
     }
 
