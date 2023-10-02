@@ -56,6 +56,7 @@ $(document).ready(function(){
                 audio2.play();
             });
         }  
+        document.querySelector('#mudaTela btn-azul').addEventListener('click', reproduzirAudio);
         
     }
 
