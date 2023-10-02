@@ -1,4 +1,3 @@
-confirm("Are you sure you want to delete?")
 $(document).ready(function(){
 
     $(".mudaTela").click(function(){
@@ -43,9 +42,15 @@ $(document).ready(function(){
         if(nova == 5){
             var audio1 = new Audio('assets/INBOX.mp3');
             var audio2 = new Audio('assets/musica.mp3');
+            var audio3 = new Audio('assets/explodir.mp3');
                 audio1.volume = 0.1;
                 audio2.volume = 0.1;
+                audio3.volume = 0.1;
+                audio3.play();
+            audio3.addEventListener('ended', function() {
+                // Quando o áudio1 termina, reproduza o áudio2 automaticamente
                 audio1.play();
+            });
             audio1.addEventListener('ended', function() {
                 // Quando o áudio1 termina, reproduza o áudio2 automaticamente
                 audio2.play();
@@ -100,7 +105,7 @@ $(document).ready(function(){
             case "29/4": titulo = "29 de Abril de 2023"; mensagem = "<p>Nos beijamos pela primeira vez nesse dia. Você lembra como foi a sensação? Eu sinto a mesma sensação toda vez que te beijo, é sempre apaixonante te beijar.</p>";break;
             case "4/6": titulo = "04 de Junho de 2023"; mensagem = "<p>Sei que você me pediu em namoro a primeira vez no dia 15/05, mas eu decidi colocar a data oficial apenas. No dia 04 você me pediu em namoro, me deu uma aliança e fizemos um piquenique lindo. Eu amei ter divido esse momento com você.</p>";break;
             case "21/10": titulo = "21 de Outubro de 2023"; mensagem = "<section class='text-center'><p class='letra-vermelha'><strong>Este momento está sendo escrito agora...</strong></p></section>";break;
-            case "final": titulo = "4 de Novembro de 2023"; mensagem = "<section class='text-center mt-5 mb-5'><p><strong>O dia em que ela me disse<br><span class='letra2 letra-vermelha'>SIM</span></strong></p></section>";break;
+            case "final": titulo = "21 de Outubro de 2023"; mensagem = "<section class='text-center mt-5 mb-5'><p><strong>O dia em que ela me disse<br><span class='letra2 letra-vermelha'>SIM.</span></strong></p></section>";break;
         }
 
         mostraPopUp(true, titulo, mensagem);

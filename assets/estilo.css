@@ -29,8 +29,11 @@ h1, h2, h3{
 .letra2{
     font-family: 'Comfortaa', cursive;
     font-size: 1.7em;
-    font-weight: 400;
+    font-weight: 500;
     padding: auto 30px auto 30px;
+    background: -webkit-linear-gradient(#f857a6, #ff5858);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .letra-vermelha{
@@ -39,7 +42,7 @@ h1, h2, h3{
     -webkit-text-fill-color: transparent;
 }
 
-.fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6, .fundo7{
+.fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6, .fundo7, .fundo11, .fundo12{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -72,6 +75,14 @@ h1, h2, h3{
 }
 .fundo10{
     background-color: #111;
+}
+
+.fundo11{
+    background-image: url('../imagens/fundo11.gif');
+}
+
+.fundo12{
+    background-image: url('../imagens/fundo12.avif');
 }
 
 img{
