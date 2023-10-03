@@ -45,7 +45,7 @@ $(document).ready(function(){
 
                 var audio1 = new Audio('assets/INBOX.mp3');
                 var audio2 = new Audio('assets/musica.mp3');
-                var audio3 = new Audio('assets/explodir.mp3');
+                var audio3 = new Audio('assets/Explodir.mp3');
 
                 audio1.volume = 0.1;
                 audio2.volume = 0.1;
