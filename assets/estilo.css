@@ -31,7 +31,7 @@ h1, h2, h3{
     font-size: 1.7em;
     font-weight: 500;
     padding: auto 30px auto 30px;
-    background: -webkit-linear-gradient(#f857a6, #ff5858);
+    background: -webkit-linear-gradient(#f30303, #f32828);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
